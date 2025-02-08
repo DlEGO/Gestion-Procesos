@@ -1,0 +1,55 @@
+.nav-Container {
+  background: linear-gradient(90deg, #e94560 0%, #ff2e63 100%);
+  padding: 16px 24px;
+  height: 5%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-out;
+}
+
+.btnMenu {
+  flex: 3;
+}
+
+.sideBar_button {
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sideBar_button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.program-button {
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.program-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
