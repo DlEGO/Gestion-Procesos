@@ -1,0 +1,101 @@
+.process-form {
+  width: 40%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #111;
+  height: 90%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 10px; /* Espacio entre los grupos de formulario */
+  width: 100%; /* Opcional: Ocupa todo el ancho del contenedor padre */
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background-color: #1a1a1a;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #3b82f6;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #2563eb;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+.bloqueos {
+  display: flex; /* Convierte el contenedor en un flexbox */
+  gap: 10px;/* Alinea los elementos verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
+  width: 100%; /* Opcional: Ocupa todo el ancho del contenedor padre */
+}
+
+.bloqueosGuardados {
+  margin-top: 20px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  border: 2px solid #333;
+  max-height: 60px;
+  overflow-y: auto;
+  padding: 8px;
+}
+
+.bloqueosGuardados::-webkit-scrollbar {
+  width: 8px;
+}
+
+.bloqueosGuardados::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 4px;
+}
+
+.bloqueosGuardados::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+.bloqueosGuardados::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}

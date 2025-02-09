@@ -1,0 +1,68 @@
+.nav-Container {
+  background-color: #111;
+  padding: 8px;
+  height: 5%;
+  display: flex;
+  border-bottom: 1px solid #333;
+  position: relative;
+}
+
+.btnMenu {
+  flex: 3;
+}
+
+.sideBar_button {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+.sidebar { /* O el selector que uses para tu menú lateral */
+  position: absolute; /* Lo saca del flujo del documento */
+  top: 100%; /* Se despliega desde abajo del botón */
+  left: 0; /* O la posición inicial que desees */
+  width: 250px; /* O el ancho que necesites */
+  background-color: #f0f0f0; /* Ejemplo */
+  transform: translateY(-100%); /* Oculto por defecto */
+  transition: transform 0.3s ease-in-out; /* Animación */
+  z-index: 1000; /* Asegura que esté por encima del contenido principal */
+}
+
+.sidebar.open { /* Clase que se añade cuando el menú está abierto */
+  transform: translateY(0); /* Se muestra */
+}
+
+.sideBar_button:hover {
+  background-color: #1a1a1a;
+  cursor: pointer;
+  border-bottom: 2px solid #3b82f6;
+}
+
+.program-button {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  font-size: 22px;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  font-family: sans-serif;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+.program-button:hover {
+  background-color: #1a1a1a;
+  cursor: pointer;
+  border-bottom: 2px solid #3b82f6;
+}
+
+.form {
+  flex: 1;
+}
+

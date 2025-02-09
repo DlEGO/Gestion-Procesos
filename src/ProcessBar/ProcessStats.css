@@ -1,0 +1,48 @@
+.table-container { /* Nuevo contenedor para la tabla y el h2 */
+  width: 100%; /* Opcional: Ocupa todo el ancho disponible */
+  text-align: center; /* Centra el contenido horizontalmente */
+}
+
+table {
+  width: 90%; /* Ancho de la tabla, ajusta según necesites */
+  border: 2px solid #333;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #111;
+  margin: 0 auto; /* Centra la tabla horizontalmente */
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #333;
+}
+
+th {
+  background-color: #1a1a1a;
+  color: #fff;
+  font-weight: 500;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #1a1a1a;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #111;
+}
+
+td {
+  font-size: 14px;
+  color: #fff;
+}
+
+tbody tr:hover {
+  background-color: #222;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+}
