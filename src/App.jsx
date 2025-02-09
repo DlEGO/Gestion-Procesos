@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import SideBar from "./SideBar/SideBar";
 import NavBar from "./NavBar/NavBar";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import Graph from "./Graph/Graph";
 import ProcessForm from "./forms/processForm/ProcessForm";
 import ProcessBar from "./ProcessBar/ProcessBar";
@@ -44,7 +44,7 @@ function App() {
           className="container"
           style={{
             display: "flex",
-            flexDirection: "column", // Mantén la dirección principal en columna
+            flexDirection: "column",
             alignItems: "center",
             gap: "10px",
             padding: "10px",
@@ -53,12 +53,11 @@ function App() {
         >
           <div
             style={{
-              // Nuevo div para ProcessForm y ProcessBar
               display: "flex",
-              flexDirection: "row", // Alinea los elementos horizontalmente
-              alignItems: "flex-start", // Alinea los elementos en la parte superior
-              gap: "10px", // Espacio entre ProcessForm y ProcessBar
-              width: "100%", // Opcional: Ocupa todo el ancho del contenedor
+              flexDirection: "row",
+              alignItems: "flex-start",
+              gap: "10px",
+              width: "100%",
             }}
           >
             <ProcessForm agregarProceso={agregarProceso} />
@@ -67,7 +66,7 @@ function App() {
           <ProcessStats dataProccesada={dataProcesada} dataInicial={procesos} />
           <GlobalStas dataProccesada={dataProcesada} dataInicial={procesos} />
           <Routes>
-            <Route path="/" />
+            <Route path="/" element={<Navigate to="/FCFS" />} />
             <Route
               path="/FCFS"
               element={
